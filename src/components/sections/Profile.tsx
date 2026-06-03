@@ -1,4 +1,4 @@
-import gmbr1 from "images/pusat.jpg";
+import gmbr1 from "../../assets/images/pusat.jpg";
 
 export default function Profile() {
   return (

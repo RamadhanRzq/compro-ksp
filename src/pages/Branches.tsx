@@ -2,10 +2,10 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
-import pusat from "images/pusat.jpg";
-import kerjo from "images/kerjo.jpg";
-import mjgd from "images/mjgd.jpg";
-import jmbg from "images/jmbg.jpg";
+import pusat from "../assets/images/pusat.jpg";
+import kerjo from "../assets/images/kerjo.jpg";
+import mjgd from "../assets/images/mjgd.jpg";
+import jmbg from "../assets/images/jmbg.jpg";
 
 const branches = [
   {
