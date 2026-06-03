@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import gmbr1 from "../../assets/images/pusat.jpg";
-import umkm1 from "../../assets/images/umkm1.jpg";
-import umkm2 from "../../assets/images/umkm2.jpg";
+import gmbr1 from "images/pusat.jpg";
+import umkm1 from "images/umkm1.jpg";
+import umkm2 from "images/umkm2.jpg";
 
 import "swiper/css";
 import "swiper/css/pagination";
