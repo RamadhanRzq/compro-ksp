@@ -81,7 +81,7 @@ const services = [
           // "Jangka waktu 3 bulan bunga 8 % per tahun",
           // "Jangka waktu 6 bulan bunga 9 % per tahun",
           "Simpanan dengan jangka waktu tertentu",
-          "Jangka waktu 12 bulan bunga 10 % per tahun",
+          // "Jangka waktu 12 bulan bunga 10 % per tahun",
           "Jumlah minimal Rp. 1.000.000,- (Satu Juta Rupiah)",
           "Suku bunga/jasa dapat berubah sewaktu-waktu",
         ],
