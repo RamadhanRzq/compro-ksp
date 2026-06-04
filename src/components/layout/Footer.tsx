@@ -24,7 +24,7 @@ export default function Footer() {
             <p className="leading-relaxed">
               <strong>Ikuti Kami</strong>
               <br />
-              Instagram : @ksu_mitrasejati
+              Instagram : @kspmspersada
             </p>
           </div>
         </div>
