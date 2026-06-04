@@ -78,8 +78,8 @@ const services = [
       {
         title: "Simpanan Berjangka",
         description: [
-          "Jangka waktu 3 bulan bunga 8 % per tahun",
-          "Jangka waktu 6 bulan bunga 9 % per tahun",
+          // "Jangka waktu 3 bulan bunga 8 % per tahun",
+          // "Jangka waktu 6 bulan bunga 9 % per tahun",
           "Simpanan dengan jangka waktu tertentu",
           "Jangka waktu 12 bulan bunga 10 % per tahun",
           "Jumlah minimal Rp. 1.000.000,- (Satu Juta Rupiah)",
@@ -95,14 +95,14 @@ const services = [
       {
         title: "Pinjaman Flat (Tetap)",
         description: [
-          "Suku Bunga/Jasa 24 % per tahun dengan Plafon pinjaman < Rp. 10.000.000,-",
-          "Suku bunga/jasa 21 % per tahun dengan Plafon pinjaman ≥  Rp. 10.000.000,-",
+          // "Suku Bunga/Jasa 24 % per tahun dengan Plafon pinjaman < Rp. 10.000.000,-",
+          // "Suku bunga/jasa 21 % per tahun dengan Plafon pinjaman ≥  Rp. 10.000.000,-",
         ],
       },
       {
         title: "Pinjaman Menurun",
         description: [
-          "Suku bunga/jasa 39 % per tahun (3,25 % X Sisa pokok pinjaman per bulan)",
+          // "Suku bunga/jasa 39 % per tahun (3,25 % X Sisa pokok pinjaman per bulan)",
         ],
       },
     ],
