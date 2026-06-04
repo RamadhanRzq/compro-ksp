@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kspmitrasejatipersada.my.id/sitemap.xml
