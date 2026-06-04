@@ -18,7 +18,7 @@ export default function Navbar() {
           <Link to="/profile">Profil</Link>
           <Link to="/branches">Cabang Kami</Link>
           <Link to="/career">Karir</Link>
-          {/* <Link to="/news">Artikel & Berita</Link> */}
+          <Link to="/news">Artikel & Berita</Link>
         </ul>
 
         {/* Mobile Button */}
@@ -39,7 +39,7 @@ export default function Navbar() {
             <li><Link to="/profile">Profil</Link></li>
             <li><Link to="/branches">Cabang Kami</Link></li>
             <li><Link to="/career">Karir</Link></li>
-            {/* <li><Link to="/news">Artikel & Berita</Link></li> */}
+            <li><Link to="/news">Artikel & Berita</Link></li>
           </ul>
         </div>
       )}
