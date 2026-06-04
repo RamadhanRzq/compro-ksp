@@ -264,6 +264,16 @@ export default function Services() {
             </div>
           ))}
         </div>
+          <section>
+            <div className="text-center mt-12">
+              <a
+                href="https://wa.me/6281234567890?text=Halo%20Admin%20KSP%20Mitra%20Sejati%20Persada,%20saya%20ingin%20mendapatkan%20informasi%20lebih%20lanjut%20tentang%20produk"
+                className="inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-primary-dark transition"
+              >
+                Hubungi Admin, Untuk Informasi Lebih Lanjut
+              </a>
+            </div>
+        </section>
       </div>
     </section>
     </>
