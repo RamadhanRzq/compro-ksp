@@ -22,11 +22,36 @@ const services = [
   }, 
   ];
 
+<script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "KSP Mitra Sejati Persada",
+  url: "https://kspmitrasejatipersada.my.id",
+  logo: "https://kspmitrasejatipersada.my.id/logoksp.png"
+})}
+</script>
+
 export default function Home() {
   return (
     <>
       <Helmet>
-        <title>KSP Mitra Sejati Persada</title>
+        <meta property="og:title" content="KSP Mitra Sejati Persada" />
+
+        <meta
+          property="og:description"
+          content="Koperasi Simpan Pinjam terpercaya untuk kebutuhan anggota."
+        />
+
+        <meta
+          property="og:image"
+          content="https://kspmitrasejatipersada.my.id/logoksp.png"
+        />
+
+        <meta
+          property="og:url"
+          content="https://kspmitrasejatipersada.my.id"
+        />
       </Helmet>
 
       <Navbar />
