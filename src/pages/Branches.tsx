@@ -69,14 +69,6 @@ const branches = [
   },
 ];
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 28 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.07, duration: 0.6, ease: [0.16, 1, 0.3, 1] },
-  }),
-};
 
 export default function Branches() {
   return (
