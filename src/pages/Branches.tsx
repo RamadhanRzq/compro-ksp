@@ -3,6 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
 import pusat from "../assets/images/pusat.jpg";
+import logo from "../assets/images/logoksp.jpg";
 import kerjo from "../assets/images/kerjo.jpg";
 import mjgd from "../assets/images/mjgd.jpg";
 import jmbg from "../assets/images/jmbg.jpg";
@@ -37,25 +38,25 @@ const branches = [
     name: "Kantor Cabang Tasikmadu",
     address: ": Jl. Tasikmadu-Kebakkramat Km.01, Nlano Rt.01 Rw.01, Pandeyan, Tasikmadu, Karanganyar (Utara PG Tasikmadu)",
     phone: "(0271)-6496833",
-    image: pusat,
+    image: logo,
   },
   {
     name: "Kantor Cabang Matesih",
     address: "Jl. Matesih-Karanganyar Km.01 Sidodadi Rt.01 Rw.08, Matesih, Karanganyar",
     phone: "(0271)-6494005",
-    image: pusat,
+    image: logo,
   },
   {
     name: "Kantor Cabang Jumapolo",
     address: "Jl. Raya Jumapolo-Karanganyar Km.01, Jumapolo, Karanganyar (Depan Pasar/Terminal Jumapolo)",
     phone: "(0271)-494883",
-    image: pusat,
+    image: logo,
   },
   {
     name: "Kantor Cabang Jatipuro",
     address: "Jl. Raya Jumapolo-Karanganyar Km.01, Jumapolo, Karanganyar (Depan Pasar/Terminal Jumapolo)",
     phone: "(0271)-494883",
-    image: pusat,
+    image: logo,
   },
 ];
 
