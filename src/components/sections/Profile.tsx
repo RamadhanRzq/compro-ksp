@@ -13,15 +13,6 @@ const highlights = [
   { icon: Building2, label: "Lokasi Pusat", value: "Kerjo, Karanganyar" },
 ];
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.12, duration: 0.7, ease: [0.16, 1, 0.3, 1] },
-  }),
-};
-
 export default function Profile() {
   return (
     <section style={{ background: "#F4F7F4" }}>
