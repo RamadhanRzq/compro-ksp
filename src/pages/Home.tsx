@@ -93,9 +93,6 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-4">
               Alamat Kantor Pusat
             </h2>
-            <p className="text-gray-600">
-              KSP Mitra Sejati Persada
-            </p>
           </div>
 
           <div className="overflow-hidden rounded-3xl shadow-lg">
