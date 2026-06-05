@@ -36,7 +36,7 @@ const branches = [
   },
   {
     name: "Kantor Cabang Tasikmadu",
-    address: ": Jl. Tasikmadu-Kebakkramat Km.01, Nlano Rt.01 Rw.01, Pandeyan, Tasikmadu, Karanganyar (Utara PG Tasikmadu)",
+    address: "Jl. Tasikmadu-Kebakkramat Km.01, Nlano Rt.01 Rw.01, Pandeyan, Tasikmadu, Karanganyar (Utara PG Tasikmadu)",
     phone: "(0271)-6496833",
     image: logo,
   },
