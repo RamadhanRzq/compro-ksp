@@ -3,8 +3,82 @@ import { Eye, Target, Building2, Calendar, Award } from "lucide-react";
 import gmbr1 from "../../assets/images/pusat.jpg";
 
 const misi = [
-  "Menjadi mitra usaha yang bisa menjadi solusi keuangan bagi anggota dan masyarakat dengan menjalankan prinsip-prinsip koperasi yang sehat.",
-  "Selalu melakukan peningkatan kualitas di bidang masing-masing unit usaha dan peningkatan kualitas SDM sehingga koperasi memiliki daya saing dan bisa diandalkan.",
+  {
+    title: "Melayani Semua Lapisan, Menyatukan Perbedaan",
+    desc: "Menyediakan layanan simpan pinjam yang mudah diakses, adil, dan disesuaikan dengan kebutuhan nyata setiap anggota dari berbagai latar belakang."
+  },
+  {
+    title: "Tumbuh Bersama, Bukan Sendiri",
+    desc: "Menjadikan koperasi bukan hanya tempat transaksi, tetapi ruang kolaborasi ekonomi, saling bantu, dan menginspirasi antaranggota."
+  },
+  {
+    title: "Menjaga Warisan, Mendorong Inovasi",
+    desc: "Menggabungkan semangat gotong royong dan integritas dengan pendekatan modern berbasis teknologi agar tetap relevan dan efisien."
+  },
+  {
+    title: "Transparansi adalah Pondasi",
+    desc: "Menumbuhkan budaya koperasi yang terbuka, akuntabel, dan bisa dipercaya oleh anggota maupun mitra luar."
+  },
+  {
+    title: "Koperasi Sebagai Rumah Ekonomi Rakyat",
+    desc: "Menguatkan peran koperasi sebagai pusat pengembangan ekonomi lokal, pendidikan keuangan, dan wadah pemberdayaan berkelanjutan."
+  }
+];
+
+const strategi = [
+  {
+    title: "Melayani Semua Lapisan, Menyatukan Perbedaan",
+    desc1: "Mengembangkan produk simpan pinjam yang fleksibel dan sesuai segmen (petani, pedagang, ASN, UMKM, dll).",
+    desc2: "Menyediakan layanan jemput bola atau digital bagi anggota yang sulit mengakses kantor.",
+  },
+  {
+    title: "Tumbuh Bersama, Bukan Sendiri",
+    desc1: "Mendorong kolaborasi usaha antar anggota.",
+    desc2: "Membuka forum diskusi atau pelatihan berkala antar anggota.",
+  },
+  {
+    title: "Menjaga Warisan, Mendorong Inovasi",
+    desc1: "Menjaga nilai-nilai koperasi seperti kejujuran, gotong royong, dan tanggung jawab.",
+    desc2: "Meningkatkan sistem digital dan manajemen koperasi.",
+  },
+  {
+    title: "Transparansi adalah Pondasi",
+    desc1: "Menyampaikan laporan secara rutin dan terbuka kepada anggota.",
+    desc2: "Meningkatkan peran pengawasan internal koperasi.",
+  },
+  {
+    title: "Koperasi Sebagai Rumah Ekonomi Rakyat",
+    desc1: "Membina dan mendampingi anggota dalam pengembangan usaha.",
+    desc2: "Menjadi penghubung koperasi dengan lembaga pelatihan, pemerintah, dan komunitas.",
+  },
+];
+
+const pokja = [
+  {
+    title: "Melayani Semua Lapisan, Menyatukan Perbedaan",
+    desc1: "Program 'Pinjaman Tepat Guna' untuk anggota usaha mikro dan rumah tangga.",
+    desc2: "Sosialisasi koperasi di komunitas lokal seperti RT/RW, pasar, dan kelompok tani.",
+  },
+  {
+    title: "Tumbuh Bersama, Bukan Sendiri",
+    desc1: "Kelas bulanan 'Ngopi Bareng Mitra' untuk berbagi pengetahuan usaha dan motivasi.",
+    desc2: "Program 'Pasar Mitra' untuk promosi usaha anggota melalui media koperasi atau event bersama.",
+  },
+  {
+    title: "Menjaga Warisan, Mendorong Inovasi",
+    desc1: "Digitalisasi pencatatan keuangan dan layanan melalui aplikasi koperasi.",
+    desc2: "Pelatihan nilai-nilai koperasi bagi anggota baru dan pengurus.",
+  },
+  {
+    title: "Transparansi adalah Pondasi",
+    desc1: "Rapat Anggota Tahunan (RAT) interaktif dengan visualisasi data keuangan.",
+    desc2: "Laporan bulanan melalui WhatsApp Group atau papan informasi koperasi.",
+  },
+  {
+    title: "Koperasi Sebagai Rumah Ekonomi Rakyat",
+    desc1: "Program 'Sahabat Usaha' untuk pendampingan usaha kecil anggota.",
+    desc2: "Kerja sama dengan dinas koperasi, UMKM, dan lembaga pelatihan lokal.",
+  },
 ];
 
 const highlights = [
@@ -229,14 +303,13 @@ export default function Profile() {
                 <Eye size={28} color="white" />
               </div>
               <h3
-                className="text-xl font-bold text-white mb-4"
+                className="text-xl font-bold text-white pb-5"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
               >
                 Visi
               </h3>
               <p style={{ color: "rgba(255,255,255,0.9)", lineHeight: 1.85, fontSize: "0.975rem" }}>
-                Menjadi Koperasi Serba Usaha yang sehat dan terdepan dalam memberikan pelayanan
-                kepada anggota dan masyarakat pada umumnya.
+                Menjadi ekosistem keuangan berbasis komunitas yang inovatif, inklusif, dan berkelanjutan untuk membentuk masa depan ekonomi anggota yang mandiri dan bermartabat.
               </p>
             </div>
 
@@ -256,7 +329,7 @@ export default function Profile() {
                 <Target size={28} style={{ color: "#1B7543" }} />
               </div>
               <h3
-                className="text-xl font-bold mb-5"
+                className="text-xl font-bold pb-5"
                 style={{
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
                   color: "#1A2B1F",
@@ -273,12 +346,151 @@ export default function Profile() {
                     >
                       {i + 1}
                     </span>
-                    <p
-                      className="text-sm"
-                      style={{ color: "#3D5046", lineHeight: 1.85 }}
+                    <div className="flex-1">
+                      <p
+                        className="text-sm font-bold"
+                        style={{ color: "#3D5046", lineHeight: 1.85 }}
+                      >
+                        {item.title}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </motion.div>
+
+
+        {/* ── Strategi & Program Kerja ── */}
+        <motion.div
+          custom={2}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <div className="text-center mb-10 pt-20">
+            <h2
+              className="font-extrabold"
+              style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontSize: "clamp(1.6rem, 3vw, 2.25rem)",
+                color: "#1A2B1F",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Strategi &amp; Program Kerja
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* PROGRAM KERJA */}
+            <div
+              className="p-8 rounded-3xl"
+              style={{
+                background: "white",
+                border: "1px solid #D4E8DC",
+                boxShadow: "0 8px 32px rgba(27,117,67,0.08)",
+              }}
+            >
+              <div
+                className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
+                style={{ background: "#EAF6EF" }}
+              >
+                <Target size={28} style={{ color: "#1B7543" }} />
+              </div>
+              <h3
+                className="text-xl font-bold pb-10"
+                style={{
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  color: "#1A2B1F",
+                }}
+              >
+                Program Kerja
+              </h3>
+              <ul className="space-y-4">
+                {pokja.map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span
+                      className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold text-white"
+                      style={{ background: "#1B7543", minWidth: "24px" }}
                     >
-                      {item}
-                    </p>
+                      {i + 1}
+                    </span>
+                    <div className="flex-1">
+                      <p
+                        className="text-sm font-bold"
+                        style={{ color: "#3D5046", lineHeight: 1.85 }}
+                      >
+                        {item.title}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {item.desc1}
+                      </p>
+                      {!item.desc2 ? null : (
+                        <p className="text-xs text-muted-foreground">
+                          {item.desc2}
+                        </p>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* STRATEGI */}
+            <div
+              className="p-8 rounded-3xl relative overflow-hidden"
+              style={{
+                background: "linear-gradient(135deg, #0D3D22 0%, #1B7543 100%)",
+              }}
+            >
+              <div
+                className="absolute top-0 right-0 w-40 h-40 rounded-full"
+                style={{
+                  background: "rgba(255,255,255,0.06)",
+                  transform: "translate(20px,-20px)",
+                }}
+              />
+              <div
+                className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
+                style={{ background: "rgba(255,255,255,0.15)" }}
+              >
+                <Eye size={28} color="white" />
+              </div>
+              <h3
+                className="text-xl font-bold text-white pb-10"
+                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              >
+                Strategi
+              </h3>
+              <ul className="space-y-4">
+                {strategi.map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span
+                      className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold text-white"
+                      style={{ background: "#1B7543", minWidth: "24px" }}
+                    >
+                      {i + 1}
+                    </span>
+                    <div className="flex-1">
+                      <p
+                        className="text-sm font-bold"
+                        style={{ color: "#FFFFFF", lineHeight: 1.85 }}
+                      >
+                        {item.title}
+                      </p>
+                      <p className="text-xs" style={{ color: "#FFFFFF", lineHeight: 1.85 }}>
+                        {item.desc1}
+                      </p>
+                      {!item.desc2 ? null : (
+                        <p className="text-xs" style={{ color: "#FFFFFF", lineHeight: 1.85 }}>
+                          {item.desc2}
+                        </p>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>
