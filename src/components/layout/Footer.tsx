@@ -125,9 +125,6 @@ export default function Footer() {
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>
             © 2026 KSP Mitra Sejati Persada. Seluruh hak cipta dilindungi.
           </p>
-          <p className="text-xs flex items-center gap-1.5" style={{ color: "rgba(255,255,255,0.35)" }}>
-            Dibuat dengan <Heart size={11} className="inline" style={{ fill: "#ef4444", color: "#ef4444" }} /> untuk anggota setia kami
-          </p>
         </div>
       </div>
     </footer>
