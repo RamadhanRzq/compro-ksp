@@ -9,6 +9,9 @@ import logo from "../assets/images/logoksp.jpg";
 import kerjo from "../assets/images/kerjo.jpg";
 import mjgd from "../assets/images/mjgd.jpg";
 import jmbg from "../assets/images/jmbg.jpg";
+import tskmd from "../assets/images/tskmd.jpg";
+import jmpl from "../assets/images/jmpl.jpg";
+import mtsh from "../assets/images/mtsh.jpg";
 
 const branches = [
   {
@@ -43,21 +46,21 @@ const branches = [
     name: "Kantor Cabang Tasikmadu",
     address: "Jl. Tasikmadu-Kebakkramat Km.01, Nlano Rt.01 Rw.01, Pandeyan, Tasikmadu, Karanganyar (Utara PG Tasikmadu)",
     phone: "(0271)-6496833",
-    image: logo,
+    image: tskmd,
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Matesih",
     address: "Jl. Matesih-Karanganyar Km.01 Sidodadi Rt.01 Rw.08, Matesih, Karanganyar",
     phone: "(0271)-6494005",
-    image: logo,
+    image: mtsh,
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Jumapolo",
     address: "Jl. Raya Jumapolo-Karanganyar Km.01, Jumapolo, Karanganyar (Depan Pasar/Terminal Jumapolo)",
     phone: "(0271)-494883",
-    image: logo,
+    image: jmpl,
     isPrimary: false,
   },
   {
@@ -160,11 +163,11 @@ export default function Branches() {
                 }}
               >
                 {/* Image with zoom on hover */}
-                <div className="overflow-hidden" style={{ height: "200px" }}>
+                <div className="overflow-hidden" style={{ height: "300px" }}>
                   <img
                     src={branch.image}
                     alt={branch.name}
-                    className="w-full h-full object-cover"
+                    className="w-auto h-auto max-w-full"
                     style={{ transition: "transform 0.5s ease" }}
                     onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "scale(1.07)"; }}
                     onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "scale(1)"; }}
@@ -174,15 +177,6 @@ export default function Branches() {
                 {/* Card Content */}
                 <div className="p-6">
                   {/* Badge for primary */}
-                  {branch.isPrimary && (
-                    <span
-                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold mb-3"
-                      style={{ background: "#EAF6EF", color: "#1B7543" }}
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#1B7543" }} />
-                      Kantor Pusat
-                    </span>
-                  )}
 
                   <h3
                     className="text-lg font-bold mb-3"
