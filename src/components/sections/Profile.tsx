@@ -81,12 +81,6 @@ const pokja = [
   },
 ];
 
-const highlights = [
-  { icon: Calendar, label: "Tahun Berdiri", value: "21 Maret 2006" },
-  { icon: Award, label: "Badan Hukum", value: "No. 180/518/44 Tahun 2006" },
-  { icon: Building2, label: "Lokasi Pusat", value: "Kerjo, Karanganyar" },
-];
-
 export default function Profile() {
   return (
     <section style={{ background: "#F4F7F4" }}>
