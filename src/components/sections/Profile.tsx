@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Eye, Target, Building2, Calendar, Award } from "lucide-react";
-import gmbr1 from "../../assets/images/pusat.jpg";
+import gmbr1 from "../../assets/images/kantorpusat.jpg";
 
 const misi = [
   {

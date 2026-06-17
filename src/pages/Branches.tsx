@@ -1,77 +1,173 @@
 import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
-import { MapPin, Phone, Building2 } from "lucide-react";
+import { motion,AnimatePresence } from "framer-motion";
+import { MapPin, Phone, Building2, ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import { useState } from "react";
 
-import pusat from "../assets/images/pusat.jpg";
-import logo from "../assets/images/logoksp.jpg";
-import kerjo from "../assets/images/kerjo.jpg";
-import mjgd from "../assets/images/mjgd.jpg";
-import jmbg from "../assets/images/jmbg.jpg";
-import tskmd from "../assets/images/tskmd.jpg";
-import jmpl from "../assets/images/jmpl.jpg";
-import mtsh from "../assets/images/mtsh.jpg";
+import pusat from "../assets/images/kantorpusat.jpg";
+import kaspusat from "../assets/images/kaspusat.jpg";
+import kerjo from "../assets/images/kantorkerjo.jpg";
+import mjgd from "../assets/images/kantormjgd.jpg";
+import kasmjgd from "../assets/images/kasmjgd.jpg";
+import jmbg from "../assets/images/kantorjmbg.jpg";
+import kasjmbg from "../assets/images/kasjmbg.jpg";
+import tskmd from "../assets/images/kantortskmd.jpg";
+import jmpl from "../assets/images/kantorjmpl.jpg";
+import kasjmpl from "../assets/images/kasjmpl.jpg";
+import mtsh from "../assets/images/kantormtsh.jpg";
+import kasmtsh from "../assets/images/kasmtsh.jpg";
+import jtpr from "../assets/images/kantorjtpr.jpg";
+import kasjtpr from "../assets/images/kasjtpr.jpg";
 
 const branches = [
   {
     name: "Kantor Pusat",
     address: "Jl. Batujamus-Karanganyar Km.01, Plosorejo RT.02 RW.02, Kuto, Kerjo, Karanganyar",
     phone: "(0271)-6493247",
-    image: pusat,
+    images: [pusat,kaspusat],
     isPrimary: true,
   },
   {
     name: "Kantor Cabang Kerjo",
     address: "Jl. Batujamus-Karanganyar Km.01, Bangunsari Rt.07 Rw.01, Kuto, Kerjo, Karanganyar (Depan Pasar Kwadungan)",
     phone: "(0271)-6493168",
-    image: kerjo,
+    images: [kerjo],
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Mojogedang",
     address: "Jl. Mojogedang-Karangpandan Km.01, Mojogedang Rt.01 Rw.01, Mojogedang, Karanganyar (Timur Pasar Mojogedang)",
     phone: "(0271)-4990402",
-    image: mjgd,
+    images: [mjgd,kasmjgd],
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Jambangan",
     address: "Jl. Jambangan-Grompol Km.01, Jambangan Rt.13 Rw.01, Pereng, Mojogedang, Karanganyar (Barat Pasar Jambangan ±500m)",
     phone: "(0271)-7881239",
-    image: jmbg,
+    images: [jmbg,kasjmbg],
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Tasikmadu",
     address: "Jl. Tasikmadu-Kebakkramat Km.01, Nlano Rt.01 Rw.01, Pandeyan, Tasikmadu, Karanganyar (Utara PG Tasikmadu)",
     phone: "(0271)-6496833",
-    image: tskmd,
+    images: [tskmd],
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Matesih",
     address: "Jl. Matesih-Karanganyar Km.01 Sidodadi Rt.01 Rw.08, Matesih, Karanganyar",
     phone: "(0271)-6494005",
-    image: mtsh,
+    images: [mtsh,kasmtsh],
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Jumapolo",
     address: "Jl. Raya Jumapolo-Karanganyar Km.01, Jumapolo, Karanganyar (Depan Pasar/Terminal Jumapolo)",
     phone: "(0271)-494883",
-    image: jmpl,
+    images: [jmpl,kasjmpl],
     isPrimary: false,
   },
   {
     name: "Kantor Cabang Jatipuro",
     address: "Jl. Raya Jumapolo-Karanganyar Km.01, Jumapolo, Karanganyar (Depan Pasar/Terminal Jumapolo)",
     phone: "(0271)-494883",
-    image: logo,
+    images: [jtpr,kasjtpr],
     isPrimary: false,
   },
 ];
 
+function BranchImageSlider({
+  images,
+  alt,
+}: {
+  images: string[];
+  alt: string;
+}) {
+  const [current, setCurrent] = useState(0);
+
+  const total = images.length;
+
+  const nextImage = () => {
+    setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1));
+  };
+
+  const prevImage = () => {
+    setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1));
+  };
+
+  if (!images || images.length === 0) return null;
+
+  return (
+    <div className="relative overflow-hidden group" style={{ height: "300px" }}>
+      <AnimatePresence mode="wait">
+        <motion.img
+          key={current}
+          src={images[current]}
+          alt={`${alt} ${current + 1}`}
+          className="w-full h-full object-cover cursor-grab active:cursor-grabbing"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -40 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
+          whileHover={{ scale: 1.07 }}
+          drag={total > 1 ? "x" : false}
+          dragConstraints={{ left: 0, right: 0 }}
+          onDragEnd={(_, info) => {
+            if (info.offset.x < -60) nextImage();
+            if (info.offset.x > 60) prevImage();
+          }}
+        />
+      </AnimatePresence>
+
+      {total > 1 && (
+        <>
+          <button
+            type="button"
+            onClick={prevImage}
+            className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            style={{
+              background: "rgba(255,255,255,0.9)",
+              boxShadow: "0 4px 14px rgba(0,0,0,0.15)",
+            }}
+          >
+            <ChevronLeft size={18} style={{ color: "#1B7543" }} />
+          </button>
+
+          <button
+            type="button"
+            onClick={nextImage}
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            style={{
+              background: "rgba(255,255,255,0.9)",
+              boxShadow: "0 4px 14px rgba(0,0,0,0.15)",
+            }}
+          >
+            <ChevronRight size={18} style={{ color: "#1B7543" }} />
+          </button>
+
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => setCurrent(index)}
+                className="rounded-full transition-all"
+                style={{
+                  width: current === index ? "22px" : "8px",
+                  height: "8px",
+                  background: current === index ? "#1B7543" : "rgba(255,255,255,0.85)",
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
 
 export default function Branches() {
   return (
@@ -164,14 +260,10 @@ export default function Branches() {
               >
                 {/* Image with zoom on hover */}
                 <div className="overflow-hidden" style={{ height: "300px" }}>
-                  <img
-                    src={branch.image}
-                    alt={branch.name}
-                    className="w-auto h-auto max-w-full"
-                    style={{ transition: "transform 0.5s ease" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "scale(1.07)"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "scale(1)"; }}
-                  />
+                  <BranchImageSlider
+                      images={branch.images}
+                      alt={branch.name}
+                    />
                 </div>
 
                 {/* Card Content */}

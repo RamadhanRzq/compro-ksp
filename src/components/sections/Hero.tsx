@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import gmbr1 from "../../assets/images/pusat.jpg";
+import gmbr1 from "../../assets/images/kantorpusat.jpg";
 import umkm1 from "../../assets/images/umkm1.jpg";
 import umkm2 from "../../assets/images/umkm2.jpg";
 
