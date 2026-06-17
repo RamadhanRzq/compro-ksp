@@ -9,7 +9,7 @@ const misi = [
   },
   {
     title: "Tumbuh Bersama, Bukan Sendiri",
-    desc: "Menjadikan koperasi bukan hanya tempat transaksi, tetapi ruang kolaborasi ekonomi, saling bantu, dan menginspirasi antaranggota."
+    desc: "Menjadikan koperasi bukan hanya tempat transaksi, tetapi ruang kolaborasi ekonomi, saling bantu, dan menginspirasi antar anggota."
   },
   {
     title: "Menjaga Warisan, Mendorong Inovasi",
