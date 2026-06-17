@@ -21,9 +21,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const slides = [
-  { title: "Produk Simpanan & Pinjaman", description: "Koperasi yang tumbuh bersama anggota melalui semangat gotong royong dan profesionalisme.", image: umkm3 },
-  { title: "Solusi Keuangan Terpercaya", description: "Solusi keuangan yang aman, mudah, dan transparan untuk seluruh anggota.", image: umkm4 },
-  { title: "Akses Permodalan UMKM", description: "Memberikan akses permodalan dan pengembangan usaha yang berkelanjutan.", image: umkm5 },
+  { title: "Tumbuh Bersama, Bukan Sendiri", description: "Menjadikan koperasi bukan hanya tempat transaksi, tetapi ruang kolaborasi ekonomi, saling bantu, dan menginspirasi antar anggota.", image: umkm3 },
+  { title: "Transparansi adalah Pondasi", description: "Menumbuhkan budaya koperasi yang terbuka, akuntabel, dan bisa dipercaya oleh anggota maupun mitra luar.", image: umkm4 },
+  { title: "Koperasi Sebagai Rumah Ekonomi Rakyat", description: "Menguatkan peran koperasi sebagai pusat pengembangan ekonomi lokal, pendidikan keuangan, dan wadah pemberdayaan berkelanjutan.", image: umkm5 },
 ];
 
 const services = [

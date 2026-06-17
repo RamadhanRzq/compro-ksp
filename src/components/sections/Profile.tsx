@@ -208,20 +208,24 @@ export default function Profile() {
               className="mb-4 text-justify"
               style={{ color: "#3D5046", lineHeight: 1.85, fontSize: "0.975rem" }}
             >
-                KSP Mitra Sejati Persada lahir dari semangat untuk bangkit dari masa sulit. 
-                Berawal dari sisa puing-puing keputusasaan kelompok lama, lima kelompok melebur menjadi satu dengan tekad yang sama: 
+                <p className="indent-8 pt-4">
+                  KSP Mitra Sejati Persada lahir dari semangat untuk bangkit dari masa sulit. 
+                Berawal dari sisa puing-puing keputusasaan kelompok lama, lima kelompok melebur menjadi satu dengan tekad yang sama 
                 memperbaiki keadaan dan membangun lembaga yang lebih kuat, sehat, serta bermanfaat bagi anggota dan masyarakat.
-                <br />
-                Tanggal 21 Maret 2005 menjadi awal perjalanan KSU Mitra Sejati. Dengan modal awal sebesar Rp18.000.000, sebagian dana 
+                </p>
+                <p className="indent-8">
+                  Tanggal 21 Maret 2005 menjadi awal perjalanan KSU Mitra Sejati. Dengan modal awal sebesar Rp18.000.000, sebagian dana 
                 digunakan untuk kebutuhan operasional seperti sewa kantor, peralatan kantor, dan seragam karyawan. Dari sisa kas sebesar Rp3.000.000, 
                 koperasi ini mulai membuka pelayanan pertamanya.
                 Kantor pertama berdiri di depan Pasar Batujamus, yang kini dikenal sebagai Kantor Kas Kerjo. Dari tempat sederhana inilah 
                 kepercayaan mulai dibangun dan pelayanan terus berkembang.
-                <br />
-                Pada tahun 2006, KSU Mitra Sejati memperoleh badan hukum awal dengan Nomor 180/518/44 Tahun 2006. Seiring perkembangan kelembagaan, 
+                </p>
+                <p className="indent-8">
+                  Pada tahun 2006, KSU Mitra Sejati memperoleh badan hukum awal dengan Nomor 180/518/44 Tahun 2006. Seiring perkembangan kelembagaan, 
                 KSU Mitra Sejati kemudian bertransformasi menjadi KSP Mitra Sejati Persada dengan nomor badan hukum AHU-0003640.AH.38.TAHUN 2025.
                 Dengan slogan “Solusi Kemitraan Anda”, KSP Mitra Sejati Persada terus berkomitmen menjadi mitra terpercaya yang tumbuh bersama anggota, 
                 karyawan, dan masyarakat dalam semangat kemitraan sejati.
+                </p>
            </p>
           </motion.div>
         </div>

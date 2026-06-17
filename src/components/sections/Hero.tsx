@@ -14,19 +14,19 @@ import "swiper/css/effect-fade";
 const slides = [
   {
     title: "Solusi Kemitraan Anda",
-    description: "Koperasi yang tumbuh bersama anggota melalui semangat gotong royong dan profesionalisme.",
+    description: "Menjadi ekosistem keuangan berbasis komunitas yang inovatif, inklusif, dan berkelanjutan untuk membentuk masa depan ekonomi anggota yang mandiri dan bermartabat.",
     image: gmbr1,
     badge: "KSP Mitra Sejati Persada",
   },
   {
-    title: "Keuangan yang Aman & Transparan",
-    description: "Solusi keuangan yang aman, mudah, dan transparan untuk seluruh anggota.",
+    title: "Melayani Semua Lapisan, Menyatukan Perbedaan",
+    description: "Menyediakan layanan simpan pinjam yang mudah diakses, adil, dan disesuaikan dengan kebutuhan nyata setiap anggota dari berbagai latar belakang.",
     image: umkm1,
     badge: "Simpan & Pinjam",
   },
   {
-    title: "Akses Permodalan UMKM",
-    description: "Memberikan akses permodalan dan pengembangan usaha yang berkelanjutan.",
+    title: "Menjaga Warisan, Mendorong Inovasi",
+    description: "Menggabungkan semangat gotong royong dan integritas dengan pendekatan modern berbasis teknologi agar tetap relevan dan efisien.",
     image: umkm2,
     badge: "Berdiri Sejak 2006",
   },
@@ -41,7 +41,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section id="home" className="relative" style={{ height: "100vh", minHeight: "600px" }}>
+    <section id="home" className="relative overflow-hidden" style={{ height: "100svh", minHeight: "600px" }}>
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
@@ -80,7 +80,7 @@ export default function Hero() {
               />
 
               {/* Content */}
-              <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-center px-6">
+              <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-center px-6 pt-20 pb-48 md:pt-0 md:pb-0">
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -107,10 +107,10 @@ export default function Hero() {
 
                   {/* Title */}
                   <h1
-                    className="font-extrabold text-white mb-5"
+                    className="font-extrabold text-white mb-2"
                     style={{
                       fontFamily: "'Plus Jakarta Sans', sans-serif",
-                      fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
+                      fontSize: "clamp(1.5rem, 4vw, 4.5rem)",
                       lineHeight: 1.1,
                       letterSpacing: "-0.03em",
                       textShadow: "0 4px 24px rgba(0,0,0,0.3)",
@@ -121,7 +121,7 @@ export default function Hero() {
 
                   {/* Description */}
                   <p
-                    className="mb-8 text-lg"
+                    className="mb-8 text-md"
                     style={{
                       color: "rgba(255,255,255,0.85)",
                       lineHeight: 1.7,
@@ -132,7 +132,7 @@ export default function Hero() {
                   </p>
 
                   {/* CTA Buttons */}
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-3 md:gap-4 pt-3 md:pt-8">
                     <Link to="/product" className="btn btn-white gap-2">
                       Lihat Produk
                       <ArrowRight size={16} />
@@ -164,9 +164,9 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
-        className="absolute bottom-12 left-0 right-0 z-20 px-6"
+        className="absolute bottom-6 md:bottom-28 left-0 right-0 z-20 px-4 md:px-6"
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-md md:max-w-4xl mx-auto">
           <div
             className="grid grid-cols-2 md:grid-cols-4 rounded-2xl overflow-hidden"
             style={{
@@ -179,13 +179,13 @@ export default function Hero() {
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center py-4 px-6 text-center"
+                className="flex flex-col items-center py-3 md:py-4 px-3 md:px-6 text-center"
                 style={{
                   borderRight: i < stats.length - 1 ? "1px solid rgba(255,255,255,0.15)" : "none",
                 }}
               >
                 <span
-                  className="text-2xl font-extrabold text-white"
+                  className="text-xl md:text-2xl font-extrabold text-white"
                   style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {stat.value}

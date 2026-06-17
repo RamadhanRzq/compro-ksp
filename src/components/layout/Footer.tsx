@@ -30,11 +30,11 @@ export default function Footer() {
               KSP Mitra Sejati Persada
             </h2>
             <p className="text-sm mb-6" style={{ color: "rgba(255,255,255,0.6)", lineHeight: "1.8" }}>
-              Koperasi Simpan Pinjam yang tumbuh bersama anggota melalui semangat gotong royong dan profesionalisme sejak 2006.
+              Menjadi ekosistem keuangan berbasis komunitas yang inovatif, inklusif, dan berkelanjutan untuk membentuk masa depan ekonomi anggota yang mandiri dan bermartabat.
             </p>
             {/* Social */}
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "rgba(255,255,255,0.5)" }}>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3 pb-3 pt-5" style={{ color: "rgba(255,255,255,0.5)" }}>
                 Ikuti Kami
               </p>
               <a
