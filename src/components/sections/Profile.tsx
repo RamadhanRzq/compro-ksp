@@ -211,52 +211,24 @@ export default function Profile() {
               KSP Mitra Sejati Persada
             </h2>
             <p
-              className="mb-4"
+              className="mb-4 text-justify"
               style={{ color: "#3D5046", lineHeight: 1.85, fontSize: "0.975rem" }}
             >
-              KSP "MITRA SEJATI PERSADA" berdiri pada tanggal 21 Maret 2006, yang disahkan oleh
-              kepala kantor Departemen Koperasi dengan Badan Hukum : Nomor 180/518/44 Tahun 2006.
-            </p>
-            <p style={{ color: "#3D5046", lineHeight: 1.85, fontSize: "0.975rem" }}>
-              Koperasi kami berbentuk Koperasi Serba Usaha dengan nama KSP MITRA SEJATI PERSADA
-              yang terdiri dari Unit Koperasi Simpan Pinjam, Unit Usaha Bengkel Las &amp; Tralis,
-              Unit Usaha Toko Grosir, Unit Usaha Transportasi dan Unit Usaha Percetakan.
-            </p>
-
-            {/* Highlights */}
-            <div className="mt-8 space-y-3">
-              {highlights.map((h, i) => {
-                const Icon = h.icon;
-                return (
-                  <div
-                    key={i}
-                    className="flex items-center gap-4 p-4 rounded-2xl"
-                    style={{ background: "white", border: "1px solid #D4E8DC" }}
-                  >
-                    <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                      style={{ background: "#1B7543" }}
-                    >
-                      <Icon size={18} color="white" />
-                    </div>
-                    <div>
-                      <p
-                        className="text-xs font-semibold uppercase tracking-wide"
-                        style={{ color: "#5A7566" }}
-                      >
-                        {h.label}
-                      </p>
-                      <p
-                        className="text-sm font-bold mt-0.5"
-                        style={{ color: "#1A2B1F" }}
-                      >
-                        {h.value}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+                KSP Mitra Sejati Persada lahir dari semangat untuk bangkit dari masa sulit. 
+                Berawal dari sisa puing-puing keputusasaan kelompok lama, lima kelompok melebur menjadi satu dengan tekad yang sama: 
+                memperbaiki keadaan dan membangun lembaga yang lebih kuat, sehat, serta bermanfaat bagi anggota dan masyarakat.
+                <br />
+                Tanggal 21 Maret 2005 menjadi awal perjalanan KSU Mitra Sejati. Dengan modal awal sebesar Rp18.000.000, sebagian dana 
+                digunakan untuk kebutuhan operasional seperti sewa kantor, peralatan kantor, dan seragam karyawan. Dari sisa kas sebesar Rp3.000.000, 
+                koperasi ini mulai membuka pelayanan pertamanya.
+                Kantor pertama berdiri di depan Pasar Batujamus, yang kini dikenal sebagai Kantor Kas Kerjo. Dari tempat sederhana inilah 
+                kepercayaan mulai dibangun dan pelayanan terus berkembang.
+                <br />
+                Pada tahun 2006, KSU Mitra Sejati memperoleh badan hukum awal dengan Nomor 180/518/44 Tahun 2006. Seiring perkembangan kelembagaan, 
+                KSU Mitra Sejati kemudian bertransformasi menjadi KSP Mitra Sejati Persada dengan nomor badan hukum AHU-0003640.AH.38.TAHUN 2025.
+                Dengan slogan “Solusi Kemitraan Anda”, KSP Mitra Sejati Persada terus berkomitmen menjadi mitra terpercaya yang tumbuh bersama anggota, 
+                karyawan, dan masyarakat dalam semangat kemitraan sejati.
+           </p>
           </motion.div>
         </div>
 
