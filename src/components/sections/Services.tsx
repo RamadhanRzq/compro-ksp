@@ -354,7 +354,7 @@ export default function Services() {
             >
               Butuh Informasi Lebih Lanjut?
             </h3>
-            <p className="mb-6 text-sm" style={{ color: "rgba(255,255,255,0.75)" }}>
+            <p className="mb-6 text-sm pb-4" style={{ color: "rgba(255,255,255,0.75)" }}>
               Tim kami siap membantu Anda memilih produk yang paling sesuai dengan kebutuhan
             </p>
             <a
