@@ -361,10 +361,10 @@ export default function Services() {
               href="https://wa.me/6282247170756?text=Halo%20Admin%20KSP%20Mitra%20Sejati%20Persada,%20saya%20ingin%20mendapatkan%20informasi%20lebih%20lanjut%20tentang%20produk"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-white gap-2"
+              className="btn btn-white gap-2 w-full sm:w-auto max-w-full justify-center text-center whitespace-normal"
             >
-              <MessageCircle size={16} />
-              Hubungi Admin via WhatsApp
+              <MessageCircle size={16} className="shrink-0" />
+              <span>Hubungi Admin via WhatsApp</span>
             </a>
           </div>
         </div>
