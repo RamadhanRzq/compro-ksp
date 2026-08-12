@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Newspaper, ExternalLink } from "lucide-react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
-import { InstagramEmbed } from "react-social-media-embed";
+import InstagramEmbed from "../components/sections/InstagramEmbed";
 
 const posts = [
   "https://www.instagram.com/reel/DM6qmQPS9zB/",
@@ -153,7 +153,7 @@ export default function News() {
                 }}
               >
                 <div className="p-3 flex justify-center">
-                  <InstagramEmbed url={url} width="100%" captioned />
+                  <InstagramEmbed url={url} />
                 </div>
               </motion.div>
             ))}
