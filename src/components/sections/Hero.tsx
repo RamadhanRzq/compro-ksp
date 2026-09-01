@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import gmbr1 from "../../assets/images/kantorpusat.jpg";
-import umkm1 from "../../assets/images/umkm1.jpg";
-import umkm2 from "../../assets/images/umkm2.jpg";
+import gmbr1 from "../../assets/images/kantorpusat.webp";
+import umkm1 from "../../assets/images/umkm1.webp";
+import umkm2 from "../../assets/images/umkm2.webp";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -52,10 +52,15 @@ export default function Hero() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="relative h-screen bg-center bg-cover"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
+            <div className="relative h-full">
+              <img
+                src={slide.image}
+                alt={slide.badge}
+                {...(index === 0
+                  ? { fetchPriority: "high" as const }
+                  : { loading: "lazy" as const, decoding: "async" as const })}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               {/* Multi-layer overlay for dramatic effect */}
               <div
                 className="absolute inset-0"

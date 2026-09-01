@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../../assets/images/logoksp.jpg";
+import logo from "../../assets/images/logoksp.webp";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [

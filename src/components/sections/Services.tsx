@@ -13,9 +13,9 @@ import {
   Users,
   MessageCircle,
 } from "lucide-react";
-import umkm3 from "../../assets/images/umkm3.jpg";
-import umkm4 from "../../assets/images/umkm4.jpg";
-import umkm5 from "../../assets/images/umkm5.jpg";
+import umkm3 from "../../assets/images/umkm3.webp";
+import umkm4 from "../../assets/images/umkm4.webp";
+import umkm5 from "../../assets/images/umkm5.webp";
 
 import "swiper/css";
 import "swiper/css/pagination";

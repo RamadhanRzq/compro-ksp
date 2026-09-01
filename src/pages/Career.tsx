@@ -3,7 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Briefcase, Bell, Clock, Users } from "lucide-react";
-import loker from "../assets/images/loker.jpeg";
+// import loker from "../assets/images/loker.webp";
 
 const perks = [
   { icon: Users, title: "Tim yang Solid", desc: "Bergabung dengan tim profesional yang berdedikasi dan penuh semangat gotong royong." },
@@ -105,19 +105,19 @@ export default function Career() {
                 </div>
               </div>
 
-              <div className="w-full">
+              {/* <div className="w-full">
                 <img src={loker} alt="Logo KSP Mitra Sejati Persada" className="" />
-              </div>
+              </div> */}
 
-              {/* <h2
-                className="text-2xl font-extrabold mb-3"
+              <h2
+                className="text-2xl font-extrabold mb-10"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#1A2B1F" }}
               >
                 Belum Ada Lowongan Tersedia
               </h2>
 
-              <p className="mb-2" style={{ color: "#5A7566", lineHeight: 1.8, maxWidth: "480px", margin: "0 auto 0.75rem" }}>
-                Terima kasih atas minat Anda untuk bergabung bersama{" "}
+              <p className="mb-10" style={{ color: "#5A7566", lineHeight: 1.8, maxWidth: "480px", margin: "0 auto 0.75rem" }}>
+                Terima kasih atas minat Anda untuk bergabung bersama <br />{" "}
                 <span className="font-semibold" style={{ color: "#1B7543" }}>
                   KSP Mitra Sejati Persada
                 </span>.
@@ -125,10 +125,10 @@ export default function Career() {
               <p style={{ color: "#5A7566", lineHeight: 1.8, maxWidth: "460px", margin: "0 auto" }}>
                 Saat ini kami belum membuka lowongan pekerjaan. Silakan kunjungi halaman ini secara
                 berkala atau ikuti Instagram resmi kami untuk mendapatkan informasi terbaru.
-              </p> */}
+              </p>
 
               {/* Instagram CTA */}
-              {/* <a
+              <a
                 href="https://www.instagram.com/kspmspersada"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -144,7 +144,7 @@ export default function Career() {
                 onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 6px 20px rgba(27,117,67,0.25)"; }}
               >
                 Ikuti @kspmspersada di Instagram
-              </a> */}
+              </a>
             </div>
           </motion.div>
 

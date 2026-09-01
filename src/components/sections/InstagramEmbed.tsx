@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -15,7 +15,27 @@ interface InstagramEmbedProps {
 }
 
 export default function InstagramEmbed({ url }: InstagramEmbedProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
   useEffect(() => {
+    const el = ref.current;
+    if (!el || visible) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [visible]);
+
+  useEffect(() => {
+    if (!visible) return;
     if (!window.instgrm) {
       const script = document.createElement("script");
       script.src = "https://www.instagram.com/embed.js";
@@ -29,21 +49,23 @@ export default function InstagramEmbed({ url }: InstagramEmbedProps) {
     } else {
       window.instgrm.Embeds.process();
     }
-  }, [url]);
+  }, [visible]);
 
   return (
-    <blockquote
-      className="instagram-media"
-      data-instgrm-permalink={url}
-      data-instgrm-version="14"
-      style={{
-        background: "#FFF",
-        border: 0,
-        margin: 0,
-        maxWidth: "540px",
-        minWidth: "326px",
-        width: "100%",
-      }}
-    />
+    <div ref={ref}>
+      <blockquote
+        className="instagram-media"
+        data-instgrm-permalink={url}
+        data-instgrm-version="14"
+        style={{
+          background: "#FFF",
+          border: 0,
+          margin: 0,
+          maxWidth: "540px",
+          minWidth: "326px",
+          width: "100%",
+        }}
+      />
+    </div>
   );
 }

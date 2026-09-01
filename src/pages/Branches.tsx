@@ -5,20 +5,20 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { useState } from "react";
 
-import pusat from "../assets/images/kantorpusat.jpg";
-import kaspusat from "../assets/images/kaspusat.jpg";
-import kerjo from "../assets/images/kantorkerjo.jpg";
-import mjgd from "../assets/images/kantormjgd.jpg";
-import kasmjgd from "../assets/images/kasmjgd.jpg";
-import jmbg from "../assets/images/kantorjmbg.jpg";
-import kasjmbg from "../assets/images/kasjmbg.jpg";
-import tskmd from "../assets/images/kantortskmd.jpg";
-import jmpl from "../assets/images/kantorjmpl.jpg";
-import kasjmpl from "../assets/images/kasjmpl.jpg";
-import mtsh from "../assets/images/kantormtsh.jpg";
-import kasmtsh from "../assets/images/kasmtsh.jpg";
-import jtpr from "../assets/images/kantorjtpr.jpg";
-import kasjtpr from "../assets/images/kasjtpr.jpg";
+import pusat from "../assets/images/kantorpusat.webp";
+import kaspusat from "../assets/images/kaspusat.webp";
+import kerjo from "../assets/images/kantorkerjo.webp";
+import mjgd from "../assets/images/kantormjgd.webp";
+import kasmjgd from "../assets/images/kasmjgd.webp";
+import jmbg from "../assets/images/kantorjmbg.webp";
+import kasjmbg from "../assets/images/kasjmbg.webp";
+import tskmd from "../assets/images/kantortskmd.webp";
+import jmpl from "../assets/images/kantorjmpl.webp";
+import kasjmpl from "../assets/images/kasjmpl.webp";
+import mtsh from "../assets/images/kantormtsh.webp";
+import kasmtsh from "../assets/images/kasmtsh.webp";
+import jtpr from "../assets/images/kantorjtpr.webp";
+import kasjtpr from "../assets/images/kasjtpr.webp";
 
 const branches = [
   {
