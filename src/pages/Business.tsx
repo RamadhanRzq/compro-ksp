@@ -201,23 +201,6 @@ export default function Branches() {
           <p className="mt-4 mx-auto w-full" style={{ color: "rgba(255,255,255,0.8)", lineHeight: 1.7 }}>
             Temukan kantor cabang KSP Mitra Sejati Persada yang terdekat dengan Anda di seluruh Karanganyar
           </p>
-          {/* Stats */}
-          <div className="flex justify-center gap-8 mt-8">
-            <div className="text-center">
-              <p className="text-3xl font-extrabold text-white" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>8</p>
-              <p className="text-sm mt-1" style={{ color: "rgba(255,255,255,0.65)" }}>Kantor</p>
-            </div>
-            <div className="w-px" style={{ background: "rgba(255,255,255,0.2)" }} />
-            <div className="text-center">
-              <p className="text-3xl font-extrabold text-white" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>1</p>
-              <p className="text-sm mt-1" style={{ color: "rgba(255,255,255,0.65)" }}>Kantor Pusat</p>
-            </div>
-            <div className="w-px" style={{ background: "rgba(255,255,255,0.2)" }} />
-            <div className="text-center">
-              <p className="text-3xl font-extrabold text-white" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>7</p>
-              <p className="text-sm mt-1" style={{ color: "rgba(255,255,255,0.65)" }}>Kantor Cabang</p>
-            </div>
-          </div>
         </div>
       </div>
 
