@@ -10,6 +10,7 @@ const navLinks = [
   { to: "/branches", label: "Cabang Kami" },
   { to: "/career", label: "Karir" },
   { to: "/news", label: "Artikel & Berita" },
+  { to: "/business", label: "Unit Usaha" },
 ];
 
 export default function Navbar() {

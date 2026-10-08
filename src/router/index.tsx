@@ -8,6 +8,7 @@ const Profile = lazy(() => import("../pages/Profile"));
 const Branches = lazy(() => import("../pages/Branches"));
 const Career = lazy(() => import("../pages/Career"));
 const News = lazy(() => import("../pages/News"));
+const Business = lazy(() => import("../pages/Business"));
 
 const fallback = (
   <div className="min-h-screen flex items-center justify-center bg-white">
@@ -41,5 +42,9 @@ export const router = createBrowserRouter([
   {
     path: "/news",
     element: wrap(<News />),
+  },
+  {
+    path: "/business",
+    element: wrap(<Business />),
   },
 ]);
