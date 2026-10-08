@@ -198,9 +198,6 @@ export default function Branches() {
           >
             Unit Usaha Kami
           </h1>
-          <p className="mt-4 mx-auto w-full" style={{ color: "rgba(255,255,255,0.8)", lineHeight: 1.7 }}>
-            Temukan kantor cabang KSP Mitra Sejati Persada yang terdekat dengan Anda di seluruh Karanganyar
-          </p>
         </div>
       </div>
 
